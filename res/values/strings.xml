@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">D3 RMAH Calculator</string>
+    <string name="menu_switchToLPC">Switch to List Price Calculator</string>
+    <string name="menu_switchToRMC">Switch to Receive Amount Calculator</string>
+    
+    <string name="title_activity_main">D3 RMAH Calculator</string>
+    <string name="title_activity_reverse">Price to List Calculator</string>
+    
+    <string name="main_ListingPriceLabel">Auction listing price:</string>
+    <string name="main_ReceiveAmountLabel">You will receive:</string>
+ 
+    <string name="reverse_ReceivePriceLabel">Receive from sale:</string>
+    <string name="reverse_ListAuctionForLabel">List item for:</string>
+    
+    <string name="zeroCashAmount">$0.00</string>
+    <string name="depositFundsTo">Deposit funds to:</string>
+    <string name="depositBattleNet">Battle.net</string>
+    <string name="depositPayPal">PayPal</string>
+    <string name="btnCalculate">Calculate</string>
+
+</resources>

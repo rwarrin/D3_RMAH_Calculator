@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <color name="light_blue">#666666</color>
+    <color name="light_green">#569E00</color>
+    
+    <color name="light_grey">#333333</color>
+    <color name="dark_bg">#E5E5E5</color>
+    
+    <color name="button_bg">#BFBFBF</color>
+    
+    <color name="stroke">#888888</color>
+    
+    <color name="light_blue2">#0083B5</color>
+    <color name="light_green2">#569E00</color>
+    
+    <color name="light_grey2">#D3D1CE</color>
+    <color name="dark_bg2">#231F20</color>
+    
+    <color name="button_bg2">#252525</color>
+    
+</resources>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg" >
+
+    <TextView
+        android:id="@+id/receiveAmountInputLabelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/reverse_ReceivePriceLabel"
+        android:textSize="18sp"
+        android:textColor="@color/light_grey"
+        tools:context=".MainActivity" />
+
+    <EditText
+        android:id="@+id/receiveAmountEditView"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/receiveAmountInputLabelView"
+		android:layout_marginTop="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="8dp"
+		android:layout_marginLeft="8dp"
+		android:padding="4dp"
+		android:background="@drawable/editstyleoverride"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:hint="@string/zeroCashAmount"
+        android:textColor="@color/light_blue"
+        android:textSize="18sp" >
+    </EditText>
+    
+    <TextView 
+        android:id="@+id/depositToLabelView" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiveAmountInputLabelView"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:textColor="@color/light_grey"
+        android:textSize="18sp"
+        android:text="@string/depositFundsTo"/>
+    
+    <RadioGroup
+        android:id="@+id/sendToRadioGroupReverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/depositToLabelView"
+        android:layout_below="@id/receiveAmountEditView"
+        android:layout_margin="8dp">
+        
+        <RadioButton 
+            android:id="@+id/sendToBattlenet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/depositBattleNet"
+            android:textColor="@color/light_blue"
+            android:textSize="18sp" />
+        
+        <RadioButton 
+            android:id="@+id/sendtoPaypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/depositPayPal"
+            android:textColor="@color/light_blue"
+            android:textSize="18sp" />
+        
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/listAuctionForLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendToRadioGroupReverse"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/light_grey"
+        android:textSize="18sp"
+        android:text="@string/reverse_ListAuctionForLabel" />
+    
+    <TextView 
+        android:id="@+id/listAmountOutputView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listAuctionForLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/light_green"
+        android:textSize="64sp"
+        android:text="@string/zeroCashAmount" />
+    
+    <Button 
+        android:id="@+id/reverse_CalculateButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/listAmountOutputView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="4dp"
+        android:background="@drawable/buttonstyleoverride"
+        android:textColor="@color/light_blue"
+        android:textSize="18sp"
+        android:text="@string/btnCalculate" />
+
+</RelativeLayout>
