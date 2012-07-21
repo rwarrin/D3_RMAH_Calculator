@@ -12,6 +12,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         android:text="@string/main_ListingPriceLabel"
         android:textSize="18sp"
         android:textColor="@color/light_grey"
@@ -45,7 +47,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
-        android:padding="8dp"
         android:textColor="@color/light_grey"
         android:textSize="18sp"
         android:text="@string/depositFundsTo"/>
