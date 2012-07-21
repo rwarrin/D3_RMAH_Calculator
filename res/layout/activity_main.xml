@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_bg" >
+    android:background="@color/app_background" >
 
     <TextView
         android:id="@+id/listingPriceLabelView"
@@ -16,7 +16,7 @@
         android:paddingBottom="4dp"
         android:text="@string/main_ListingPriceLabel"
         android:textSize="18sp"
-        android:textColor="@color/light_grey"
+        android:textColor="@color/static_text"
         tools:context=".MainActivity" />
 
     <EditText
@@ -34,7 +34,7 @@
         android:maxLines="1"
         android:maxLength="6"
         android:hint="@string/zeroCashAmount"
-        android:textColor="@color/light_grey"
+        android:textColor="@color/static_text"
         android:textSize="18sp" >
     </EditText>
     
@@ -47,7 +47,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/light_grey"
+        android:textColor="@color/static_text"
         android:textSize="18sp"
         android:text="@string/depositFundsTo"/>
     
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/depositBattleNet"
-            android:textColor="@color/light_blue"
+            android:textColor="@color/static_text"
             android:textSize="18sp" />
         
         <RadioButton 
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/depositPayPal"
-            android:textColor="@color/light_blue"
+            android:textColor="@color/static_text"
             android:textSize="18sp" />
         
     </RadioGroup>
@@ -87,7 +87,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/light_grey"
+        android:textColor="@color/static_text"
         android:textSize="18sp"
         android:text="@string/main_ReceiveAmountLabel" />
     
@@ -117,7 +117,7 @@
         android:layout_marginBottom="8dp"
         android:padding="4dp"
         android:background="@drawable/buttonstyleoverride"
-        android:textColor="@color/light_blue"
+        android:textColor="@color/static_text"
         android:textSize="18sp"
         android:text="@string/btnCalculate" />
 

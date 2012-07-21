@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        
-    <color name="light_blue">#3F3F40</color>
+
     <color name="light_green">#569E00</color>
     
-    <color name="light_grey">#3F3F40</color>
-    <color name="dark_bg">#E3E3E5</color>
+    <color name="static_text">#3F3F40</color>
+    <color name="app_background">#E3E3E5</color>
     
-    <color name="button_bg">#BDBDBF</color>
+    <color name="button_background">#BDBDBF</color>
     
     <color name="stroke">#7E7E7F</color>
     
