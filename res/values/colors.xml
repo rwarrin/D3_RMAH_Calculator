@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         
-    <color name="light_blue">#666666</color>
+    <color name="light_blue">#66645A</color>
     <color name="light_green">#569E00</color>
     
-    <color name="light_grey">#333333</color>
-    <color name="dark_bg">#E5E5E5</color>
+    <color name="light_grey">#66645A</color>
+    <color name="dark_bg">#D9D9CE</color>
     
-    <color name="button_bg">#BFBFBF</color>
+    <color name="button_bg">#B3B5AB</color>
     
-    <color name="stroke">#888888</color>
+    <color name="stroke">#999383</color>
     
     <color name="light_blue2">#0083B5</color>
     <color name="light_green2">#569E00</color>
