@@ -2,6 +2,7 @@ package com.synaptk.D3RMAHC;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -120,6 +121,22 @@ public class ReverseActivity extends Activity {
     	return receivePriceAsCents;
     }
     
+    // Formats a string to look like a money value.
+    // @param1: string - the string to format as currency.
+    // return: if the input string doesn't have two numbers after the decimal then the string
+    // is returned with an extra '0' appended to the end, otherwise the original string is
+    // returned.
+    private String formatOutputString(String string) {
+    	Log.d("d3rmah", "string length is: "  + string.length());
+    	Log.d("d3rmah", "character at length - 1 is: " + string.charAt(string.length() - 2));
+    	
+    	if(string.charAt(string.length() - 2) == '.') {
+    		string += "0";
+    	}
+    	
+    	return string;
+    }
+    
     // Sets the text of the output text view to the value of cents after converting
     // it to dollars.
     // @param1: cents - cents value to be converted to dollars to be set as the output text
@@ -129,6 +146,7 @@ public class ReverseActivity extends Activity {
     	double dollars = convertCentsToDollars(cents);
     	
     	outputString = outputString + dollars;
+    	outputString = formatOutputString(outputString);
     	
     	output.setText(outputString);
     }
