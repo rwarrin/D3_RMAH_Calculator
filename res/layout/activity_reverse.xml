@@ -32,7 +32,7 @@
         android:maxLines="1"
         android:maxLength="6"
         android:hint="@string/zeroCashAmount"
-        android:textColor="@color/light_blue"
+        android:textColor="@color/light_grey"
         android:textSize="18sp" >
     </EditText>
     

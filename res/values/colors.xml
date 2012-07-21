@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         
-    <color name="light_blue">#66645A</color>
+    <color name="light_blue">#3F3F40</color>
     <color name="light_green">#569E00</color>
     
-    <color name="light_grey">#66645A</color>
-    <color name="dark_bg">#D9D9CE</color>
+    <color name="light_grey">#3F3F40</color>
+    <color name="dark_bg">#E3E3E5</color>
     
-    <color name="button_bg">#B3B5AB</color>
+    <color name="button_bg">#BDBDBF</color>
     
-    <color name="stroke">#999383</color>
-    
-    <color name="light_blue2">#0083B5</color>
-    <color name="light_green2">#569E00</color>
-    
-    <color name="light_grey2">#D3D1CE</color>
-    <color name="dark_bg2">#231F20</color>
-    
-    <color name="button_bg2">#252525</color>
+    <color name="stroke">#7E7E7F</color>
     
 </resources>
