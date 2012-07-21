@@ -108,7 +108,7 @@
     <Button 
         android:id="@+id/reverse_CalculateButton"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_below="@id/listAmountOutputView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"

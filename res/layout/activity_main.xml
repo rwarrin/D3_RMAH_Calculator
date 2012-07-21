@@ -108,7 +108,7 @@
     <Button 
         android:id="@+id/main_CalculateButton"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_below="@id/main_receiveAmountOutView"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
