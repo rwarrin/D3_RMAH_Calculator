@@ -3,7 +3,6 @@ package com.synaptk.D3RMAHC;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -107,10 +106,7 @@ public class MainActivity extends Activity {
     // return: if the input string doesn't have two numbers after the decimal then the string
     // is returned with an extra '0' appended to the end, otherwise the original string is
     // returned.
-    private String formatOutputString(String string) {
-    	Log.d("d3rmah", "string length is: "  + string.length());
-    	Log.d("d3rmah", "character at length - 1 is: " + string.charAt(string.length() - 2));
-    	
+    private String formatOutputString(String string) {  	
     	if(string.charAt(string.length() - 2) == '.') {
     		string += "0";
     	}
