@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.synaptk.D3RMAHC.helperUtils;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -46,11 +48,11 @@ public class MainActivity extends Activity {
     // Converts dollars (double) to cents (int).
     // @param1: dollars - value to be converted to cents.
     // return: returns the cents value of the input dollars as an int.
-    private int convertDollarsToCents(double dollars) {
+    /*private int convertDollarsToCents(double dollars) {
     	dollars = dollars * 100;
     	int cents = (int)dollars;
     	return cents;
-    }
+    }*/
     
     // Converts cents (int) to dollars (double).
     // @param1: cents - value to be converted to dollars.
@@ -72,7 +74,7 @@ public class MainActivity extends Activity {
     	// get text from input box, convert it to a string then convert it to a double
     	double doubleValue = Double.valueOf(inputPrice.getText().toString());
     	// convert the double to an int
-    	int value = convertDollarsToCents(doubleValue);
+    	int value = helperUtils.convertDollarsToCents(doubleValue);
     	
     	return value;
     }
