@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import com.synaptk.D3RMAHC.helperUtils;
 
 public class ReverseActivity extends Activity {
 
@@ -41,25 +42,8 @@ public class ReverseActivity extends Activity {
     		return super.onOptionsItemSelected(item);
     	}
     }
-    
-    // Converts dollars (double) to cents (int).
-    // @param1: dollars - value to be converted to cents.
-    // return: returns the cents value of the input dollars as an int.
-    private int convertDollarsToCents(double dollars) {
-    	dollars = dollars * 100;
-    	int cents = (int)dollars;
-    	return cents;
-    }
-    
-    // Converts cents (int) to dollars (double).
-    // @param1: cents - value to be converted to dollars.
-    // return: returns the dollar value of the input cents as an int.
-    private double convertCentsToDollars(int cents) {
-    	double dollars = cents / 100.0;
-    	return dollars;
-    }
-    
- // Gets the text entered into the input box and converts it to cents (int).
+
+    // Gets the text entered into the input box and converts it to cents (int).
     // returns the input text as an int (cents).
     private int getInputPrice() {
     	EditText inputPrice = (EditText) findViewById(R.id.receiveAmountEditView);
@@ -71,7 +55,7 @@ public class ReverseActivity extends Activity {
     	// get text from input box, convert it to a string then convert it to a double
     	double doubleValue = Double.valueOf(inputPrice.getText().toString());
     	// convert the double to an int
-    	int value = convertDollarsToCents(doubleValue);
+    	int value = helperUtils.convertDollarsToCents(doubleValue);
     	
     	return value;
     }
@@ -87,14 +71,14 @@ public class ReverseActivity extends Activity {
     	// check that the listed price is not greater than $250.00
     	if(cents > 25000) {
     		int newReceiveAmountAsCents = calculateReceiveAmount(25000, radioGroupSelection);
-    		inputBox.setText(String.valueOf(convertCentsToDollars(newReceiveAmountAsCents)));
+    		inputBox.setText(String.valueOf(helperUtils.convertCentsToDollars(newReceiveAmountAsCents)));
     		return 25000;  // $250.00
     	}
     	
     	// check that the listed price is not less than $2.50
     	if(cents < 250) {
     		int newReceiveAmountAsCents = calculateReceiveAmount(250, radioGroupSelection);
-    		inputBox.setText(String.valueOf(convertCentsToDollars(newReceiveAmountAsCents)));
+    		inputBox.setText(String.valueOf(helperUtils.convertCentsToDollars(newReceiveAmountAsCents)));
     		return 250;  // $2.50
     	}
     	
@@ -139,7 +123,7 @@ public class ReverseActivity extends Activity {
     private void setOutputReceiveAmount(int cents) {
     	TextView output = (TextView) findViewById(R.id.listAmountOutputView);
     	String outputString = "$";
-    	double dollars = convertCentsToDollars(cents);
+    	double dollars = helperUtils.convertCentsToDollars(cents);
     	
     	outputString = outputString + dollars;
     	outputString = formatOutputString(outputString);
