@@ -44,24 +44,7 @@ public class MainActivity extends Activity {
     		return super.onOptionsItemSelected(item);
     	}
     }
-    
-    // Converts dollars (double) to cents (int).
-    // @param1: dollars - value to be converted to cents.
-    // return: returns the cents value of the input dollars as an int.
-    /*private int convertDollarsToCents(double dollars) {
-    	dollars = dollars * 100;
-    	int cents = (int)dollars;
-    	return cents;
-    }*/
-    
-    // Converts cents (int) to dollars (double).
-    // @param1: cents - value to be converted to dollars.
-    // return: returns the dollar value of the input cents as an int.
-    private double convertCentsToDollars(int cents) {
-    	double dollars = cents / 100.0;
-    	return dollars;
-    }
-    
+
     // Gets the text entered into the input box and converts it to cents (int).
     // returns the input text as an int (cents).
     private int getInputPrice() {
@@ -122,7 +105,7 @@ public class MainActivity extends Activity {
     private void setOutputReceiveAmount(int cents) {
     	TextView output = (TextView) findViewById(R.id.main_receiveAmountOutView);
     	String outputString = "$";
-    	double dollars = convertCentsToDollars(cents);
+    	double dollars = helperUtils.convertCentsToDollars(cents);
     	
     	outputString = outputString + dollars;
     	outputString = formatOutputString(outputString);

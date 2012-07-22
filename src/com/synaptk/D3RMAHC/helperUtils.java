@@ -11,7 +11,10 @@ public class helperUtils {
 		return cents;
 	}
 	
-	public double convertCentsToDollars(int cents) {
+	// Converts cents (int) to dollars (double)
+	// @param: cents is the number of cents to convert to dollars
+	// return: returns the input as a double
+	public static double convertCentsToDollars(int cents) {
 		double dollars = cents / 100.00;
 		return dollars;
 	}
