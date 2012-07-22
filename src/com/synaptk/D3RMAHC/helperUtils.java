@@ -19,4 +19,17 @@ public class helperUtils {
 		return dollars;
 	}
 	
+	// Formats a string to look like a money value
+	// @param: string is the string to format as money
+	// return: if the string has two characters after the '.' then
+	// the original string is returned, otherwise an extra '0' is
+	// appended to the end of the string and the string is returned.
+	private static String formatOutputString(String string) {
+		if(string.charAt(string.length() - 2) == '.') {
+			string += "0";
+		}
+		
+		return string;
+	}
+	
 }
