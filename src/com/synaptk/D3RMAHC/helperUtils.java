@@ -24,7 +24,7 @@ public class helperUtils {
 	// return: if the string has two characters after the '.' then
 	// the original string is returned, otherwise an extra '0' is
 	// appended to the end of the string and the string is returned.
-	private static String formatOutputString(String string) {
+	public static String formatOutputString(String string) {
 		if(string.charAt(string.length() - 2) == '.') {
 			string += "0";
 		}
