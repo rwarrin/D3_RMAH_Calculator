@@ -86,19 +86,6 @@ public class MainActivity extends Activity {
     	return cents;
     }
     
-    // Formats a string to look like a money value.
-    // @param1: string - the string to format as currency.
-    // return: if the input string doesn't have two numbers after the decimal then the string
-    // is returned with an extra '0' appended to the end, otherwise the original string is
-    // returned.
-    private String formatOutputString(String string) {  	
-    	if(string.charAt(string.length() - 2) == '.') {
-    		string += "0";
-    	}
-    	
-    	return string;
-    }
-    
     // Sets the text of the output text view to the value of cents after converting
     // it to dollars.
     // @param1: cents - cents value to be converted to dollars to be set as the output text
@@ -108,7 +95,7 @@ public class MainActivity extends Activity {
     	double dollars = helperUtils.convertCentsToDollars(cents);
     	
     	outputString = outputString + dollars;
-    	outputString = formatOutputString(outputString);
+    	outputString = helperUtils.formatOutputString(outputString);
     	
     	output.setText(outputString);
     }
